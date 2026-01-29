@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pelaporan Bencana | Kecamatan Buluspesantren</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0f2a44;
+  --accent:#dc3545;
+  --soft:#7a7e7b;
+}
+
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:
+    linear-gradient(rgba(15,42,68,.85),rgba(15,42,68,.85)),
+    url('bg-gotong-royong.jpg') center/cover no-repeat;
+  min-height:100vh;
+}
+
+.card-main{
+  background:#7a7e7b;
+  border-radius:22px;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+  overflow:hidden;
+}
+
+/* HEADER */
+.header{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:40px 25px;
+}
+
+/* WARNING */
+.warning-box{
+  background:var(--soft);
+  padding:45px 30px;
+  text-align:center;
+}
+
+.warning-wrap{
+  display:flex;
+  flex-direction:column; 
+  gap:15px;
+  justify-content:center;
+  align-items:center; 
+}
+
+.warning-icon{
+  width:90px;
+  height:90px;
+  background:none;       
+  color:#dc3545;         
+  border-radius:0;       
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+}
+
+.btn-lapor{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.btn-lapor{
+  display:inline-block;
+  margin-top:25px;
+  background:var(--accent);
+  color:#fff;
+  padding:14px 40px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.btn-lapor:hover{background:#bb2d3b}
+
+/* DROPDOWN UTAMA */
+details{
+  background:#fff;
+  margin:18px 30px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+summary{
+  list-style:none;
+  cursor:pointer;
+  padding:18px 25px;
+  font-weight:700;
+  font-size:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--primary);
+}
+
+details[open] summary{
+  border-bottom:1px solid #ddd;
+}
+
+/* SUB DROPDOWN */
+.sub details{
+  margin:15px 0;
+  box-shadow:none;
+  border:1px solid #ddd;
+}
+
+.sub summary{
+  font-size:16px;
+  font-weight:600;
+}
+
+.dropdown-content{
+  padding:25px;
+}
+
+.image-box{
+  margin-top:15px;
+  height:220px;
+  border:2px dashed #bbb;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#999;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .warning-wrap{flex-direction:column}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+<div class="card-main">
+
+<!-- HEADER -->
+<div class="header">
+  <h2>KANTOR KECAMATAN BULUSPESANTREN</h2>
+  <p>Sistem Pelaporan & Informasi Kebencanaan</p>
+</div>
+
+<!-- PELAPORAN -->
+<div class="warning-box">
+  <div class="warning-wrap">
+    <div class="warning-icon">
+      <i class="fas fa-triangle-exclamation"></i>
+    </div>
+    <div>
+      <h3 class="fw-bold mb-1">PELAPORAN BENCANA</h3>
+      <p class="text-muted mb-0">Klik tombol di bawah untuk melapor</p>
+    </div>
+  </div>
+
+  <a href="https://forms.gle/RfJUqpwqKY3vA1nb9" class="btn-lapor">
+    <i class="fas fa-bullhorn me-2"></i> Klik di sini untuk melapor
+  </a>
+</div>
+
+<!-- TEMPLATE BENCANA -->
+<!-- TSUNAMI -->
+<details>
+<summary>
+  <span><i class="fas fa-water me-2"></i> TSUNAMI</span>
+  <i class="fas fa-chevron-down"></i>
+</summary>
+
+<div class="dropdown-content sub">
+
+  <div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1tDptg_L5ZhGWW_lHe8VXkBfjGl_gFF0S/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+
+
+  <!-- SAAT TERJADI -->
+  <div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1w_dXPYx86nI-4aKyl35EmXrjy3nfkvYY/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+
+  <!-- SESUDAH TERJADI -->
+  <div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1kar0-H6dM2mZW6NRi5knZ_Su8uofv_dQ/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Setelah Terjadi
+  </a>
+</div>
+
+</div>
+</details>
+
+<!-- BANJIR -->
+<details>
+<summary><span><i class="fas fa-house-flood-water me-2"></i> BANJIR</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1FZrK8Xa7ZAJoGC6OO2Q5U80LzMNdckmT/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sebelum Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1smZyjS2I8b9aOQIsLzF9076NE-XGLqIH/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1y6EzpIkbLwL5La1nZ3EiFArlx2PQwcpO/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+</div>
+</details>
+
+<!-- LONGSOR -->
+<details>
+<summary><span><i class="fas fa-mountain me-2"></i> TANAH LONGSOR</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/12g5HlCMK34szQzJL9t5Gqn5FvyyDK64M/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sebelum Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1fChgIe0r5WtxW6YvyrX0dM6jJkh23hxj/view?usp=drive_link "
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1foY6kdxHJVdQKINS8aVjhnqMw7PK8t-K/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+</div>
+</details>
+
+<!-- GEMPA -->
+<details>
+  <summary>
+    <span><i class="fas fa-house-crack me-2"></i> GEMPA BUMI</span>
+    <i class="fas fa-chevron-down"></i>
+  </summary>
+
+  <div class="dropdown-content sub">
+
+    <div class="mb-3">
+      <a 
+        href="https://drive.google.com/file/d/17IAlVpLOKtXBypQNJXhC0Xi-GtDCA42f/view?usp=drive_link"
+        target="_blank"
+        class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+        style="background:#f8f9fa;"
+      >
+        <i class="fas fa-shield-halved text-danger me-2"></i>
+        Mencegah
+      </a>
+    </div>
+
+    <div class="mb-3">
+      <a 
+        href="https://drive.google.com/file/d/1kECGBWxx5P-RZO2I_D1PmEzJnPr3aq7y/view?usp=drive_link"
+        target="_blank"
+        class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+        style="background:#f8f9fa;"
+      >
+        <i class="fas fa-shield-halved text-danger me-2"></i>
+        Saat Terjadi
+      </a>
+    </div>
+
+    <div class="mb-3">
+      <a 
+        href="https://drive.google.com/file/d/1FJJaDaRJ2UH2G7k2FkVFarc3ii5QDJVe/view?usp=drive_link"
+        target="_blank"
+        class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+        style="background:#f8f9fa;"
+      >
+        <i class="fas fa-shield-halved text-danger me-2"></i>
+        Setelah Terjadi
+      </a>
+    </div>
+
+  </div>
+</details>
+
+<!-- GUNUNG MELETUS -->
+<details>
+<summary><span><i class="fas fa-volcano me-2"></i> GUNUNG MELETUS</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1-GRLBJ20fDWtjfO5XOZqawHkA9HQyg7a/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1tOvJBUSSa0wKu9SNsKCvaoZMsIlIc5_G/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1ImOMGFQZnWgymGLl0VMqn2fi_iKlUQfn/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Setelah Terjadi
+  </a>
+</div>
+</div>
+</details>
+
+<!-- ANGIN -->
+<details>
+<summary><span><i class="fas fa-wind me-2"></i> ANGIN PUTING BELIUNG</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1hFYaVLMKO_t8l2cVnlIPzoErC1bmXPwx/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1o-AhJpQx7S4lwR-htgBk9dNnxHEvXAKx/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1vP_WVqwFT4dV3lYsxUW48cqhb7dlW99d/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+
+</div>
+</details>
+
+<!-- KEKERINGAN -->
+<details>
+<summary><span><i class="fas fa-sun me-2"></i> KEKERINGAN</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/17QlRDCZESCi_-bPXdTTPdTS_l5HnubtI/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1aMjT8SigvuBsT_x1UNUBs0IGey1AjvAC/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/10vAWO3VJwVyt_RnHdHFK0l6MoQxa9iOR/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+</div>
+</details>
+
+<!-- KARHUTLA -->
+<details>
+<summary><span><i class="fas fa-fire me-2"></i> KARHUTLA</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1As_zaY0tIoO_PsehDWyIEashGqq7JHnQ/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1YFA5eONyTvJTTrAzlwhIm0hkMePDKWJm/view?usp=drive_link "
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1mmESf2qyJTCL1tJSr8YnnGUPAxrwBHdM/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+</div>
+</details>
+
+<!-- PENYAKIT -->
+<details>
+<summary><span><i class="fas fa-virus me-2"></i> PENYAKIT MENULAR</span><i class="fas fa-chevron-down"></i></summary>
+<div class="dropdown-content sub">
+
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/15EARk1v9y2M6SjbVgzUR8EJMM2y9lTiN/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Mencegah
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1yDsIZClvJuIgGBnKnaEoOCJKf_1xZCrt/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Saat Terjadi
+  </a>
+</div>
+<div class="mb-3">
+  <a 
+    href="https://drive.google.com/file/d/1GIyK8E9JPixVvni7O3Wei9f-6pQEyFNy/view?usp=drive_link"
+    target="_blank"
+    class="d-block p-3 rounded border text-decoration-none fw-semibold text-dark"
+    style="background:#f8f9fa;"
+  >
+    <i class="fas fa-shield-halved text-danger me-2"></i>
+    Sesudah Terjadi
+  </a>
+</div>
+</div>
+</details>
+<footer class="text-center py-4 text-muted">
+© 2026 Kecamatan Buluspesantren
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
